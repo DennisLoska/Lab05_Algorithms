@@ -94,6 +94,7 @@ public class Main {
         }
         System.out.println("Fragment 5 sum is: " + sum);
     }
+
     //O(N^2)
     public void fragment06(int n) {
         int sum = 0;
@@ -119,7 +120,10 @@ public class Main {
         System.out.println("Fragment 7 sum is: " + sum);
     }
 
-    //PART 2: Prime Numbers
+    /*
+     * * PART 2: Prime Numbers
+     */
+
     public boolean isPrime(int n) {
         if (n <= 2)
             return (n == 2);
