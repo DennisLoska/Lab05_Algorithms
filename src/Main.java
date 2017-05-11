@@ -8,6 +8,7 @@ public class Main {
     public static void main(String[] args) {
         Main main = new Main();
 
+        //best case
         main.fragment01(n10);
         main.fragment02(n10);
         main.fragment03(n10);
@@ -16,6 +17,7 @@ public class Main {
         main.fragment06(n10);
         main.fragment07(n10);
         System.out.println();
+        //average case
         main.fragment01(n100);
         main.fragment02(n100);
         main.fragment03(n100);
@@ -24,6 +26,7 @@ public class Main {
         main.fragment06(n100);
         main.fragment07(n100);
         System.out.println();
+        //worst case
         main.fragment01(n1000);
         main.fragment02(n1000);
         main.fragment03(n1000);
@@ -39,7 +42,7 @@ public class Main {
      * PART 1: Analysis of Algorithms
 	 */
 
-    //O(N)
+    //O(N) lineare Komplexität
     public void fragment01(int n) {
         int sum = 0;
         for (int i = 0; i < n; i++) {
@@ -48,7 +51,7 @@ public class Main {
         System.out.println("Fragment 1 sum is: " + sum);
     }
 
-    //O(N^2)
+    //O(N^2) quadratische Komplexität
     public void fragment02(int n) {
         int sum = 0;
         for (int i = 0; i < n; i++)
@@ -68,6 +71,7 @@ public class Main {
         System.out.println("Fragment 3 sum is: " + sum);
     }
 
+    //O(N^2) quadratische Komplexität
     public void fragment04(int n) {
         int sum = 0;
         for (int i = 0; i < n; i++) {
@@ -80,7 +84,7 @@ public class Main {
 
     }
 
-    //O(N^3)
+    //O(N^3) kubische Komplexität
     public void fragment05(int n) {
         int sum = 0;
         for (int i = 0; i < n; i++) {
@@ -90,7 +94,7 @@ public class Main {
         }
         System.out.println("Fragment 5 sum is: " + sum);
     }
-
+    //O(N^2)
     public void fragment06(int n) {
         int sum = 0;
         for (int i = 0; i < n; i++) {
