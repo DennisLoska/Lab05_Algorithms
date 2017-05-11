@@ -9,6 +9,7 @@ public class Main {
         Main main = new Main();
 
         //best case
+        System.out.println("Best case 10:");
         main.fragment01(n10);
         main.fragment02(n10);
         main.fragment03(n10);
@@ -18,6 +19,7 @@ public class Main {
         main.fragment07(n10);
         System.out.println();
         //average case
+        System.out.println("Average case 100:");
         main.fragment01(n100);
         main.fragment02(n100);
         main.fragment03(n100);
@@ -27,6 +29,7 @@ public class Main {
         main.fragment07(n100);
         System.out.println();
         //worst case
+        System.out.println("Worst case 1000:");
         main.fragment01(n1000);
         main.fragment02(n1000);
         main.fragment03(n1000);
@@ -95,7 +98,7 @@ public class Main {
         System.out.println("Fragment 5 sum is: " + sum);
     }
 
-    //O(N^2)
+    //O(N^2) quadratische Komplexität
     public void fragment06(int n) {
         int sum = 0;
         for (int i = 0; i < n; i++) {
@@ -106,6 +109,7 @@ public class Main {
         System.out.println("Fragment 6 sum is: " + sum);
     }
 
+    //O(N^3) kubische Komplexität
     public void fragment07(int n) {
         int sum = 0;
         for (int i = 1; i < n; i++) {
