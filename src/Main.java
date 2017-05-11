@@ -4,9 +4,6 @@ public class Main {
     private static int n10 = 10;
     private static int n100 = 100;
     private static int n1000 = 1000;
-    private static int n10000 = 10000;
-    private static int n100000 = 100000;
-    private static int n1000000 = 1000000;
 
     public static void main(String[] args) {
         Main main = new Main();
@@ -34,31 +31,6 @@ public class Main {
         main.fragment05(n1000);
         main.fragment06(n1000);
         main.fragment07(n1000);
-        System.out.println();
-        main.fragment01(n10000);
-        main.fragment02(n10000);
-        main.fragment03(n10000);
-        main.fragment04(n10000);
-        main.fragment05(n10000);
-        main.fragment06(n10000);
-        main.fragment07(n10000);
-        System.out.println();
-        main.fragment01(n100000);
-        main.fragment02(n100000);
-        main.fragment03(n100000);
-        main.fragment04(n100000);
-        main.fragment05(n100000);
-        main.fragment06(n100000);
-        main.fragment07(n100000);
-        System.out.println();
-        main.fragment01(n1000000);
-        main.fragment02(n1000000);
-        main.fragment03(n1000000);
-        main.fragment04(n1000000);
-        main.fragment05(n1000000);
-        main.fragment06(n1000000);
-        main.fragment07(n1000000);
-        System.out.println();
 
         System.out.println(main.isPrime(8));
     }
@@ -76,7 +48,7 @@ public class Main {
         System.out.println("Fragment 1 sum is: " + sum);
     }
 
-
+    //O(N^2)
     public void fragment02(int n) {
         int sum = 0;
         for (int i = 0; i < n; i++)
@@ -108,6 +80,7 @@ public class Main {
 
     }
 
+    //O(N^3)
     public void fragment05(int n) {
         int sum = 0;
         for (int i = 0; i < n; i++) {
