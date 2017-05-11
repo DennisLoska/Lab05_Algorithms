@@ -94,10 +94,13 @@ public class Main {
 	}
 
 	public boolean isPrime(int n) {
-		if (n % n == 0 && n % 1 == 0) {
-			return true;
+		if (n<=2)
+			return (n==2);
+		for (int i = 1; i < n; i++) {
+			if (n%i == 0)
+				return false;
 		}
-		return false;
+		return true;
 	}
 
 }
