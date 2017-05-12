@@ -8,8 +8,8 @@ public class Main {
     public static void main(String[] args) {
         Main main = new Main();
 
-        //best case
-        System.out.println("Best case 10:");
+
+        System.out.println("Case n=10:");
         main.fragment01(n10);
         main.fragment02(n10);
         main.fragment03(n10);
@@ -18,8 +18,8 @@ public class Main {
         main.fragment06(n10);
         main.fragment07(n10);
         System.out.println();
-        //average case
-        System.out.println("Average case 100:");
+
+        System.out.println("Case n=100:");
         main.fragment01(n100);
         main.fragment02(n100);
         main.fragment03(n100);
@@ -28,8 +28,8 @@ public class Main {
         main.fragment06(n100);
         main.fragment07(n100);
         System.out.println();
-        //worst case
-        System.out.println("Worst case 1000:");
+
+        System.out.println("Case n=1000:");
         main.fragment01(n1000);
         main.fragment02(n1000);
         main.fragment03(n1000);
@@ -64,6 +64,7 @@ public class Main {
         System.out.println("Fragment 2 sum is: " + sum);
     }
 
+    //O(N^2) quadratische Komplexität
     public void fragment03(int n) {
         int sum = 0;
         for (int i = 0; i < n; i++) {
@@ -131,7 +132,7 @@ public class Main {
     public boolean isPrime(int n) {
         if (n <= 2)
             return (n == 2);
-        for (int i = 1; i < n; i++) {
+        for (int i = 2; i < n; i++) {
             if (n % i == 0)
                 return false;
         }
